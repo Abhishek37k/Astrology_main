@@ -26,7 +26,7 @@ Project:    Folioflix
     --accent:#fca61f;
     --text-color: #7d7789;
     --off-white-color: #f0f4ff;
-    --light-purple-color:#6f34fe;
+    #FCA61F:#FCA61F;
     --white-color:#fff;
     --light-grey-color:#f2f2ff;
 # */
@@ -80,8 +80,8 @@ body{
   }
   
   #banner-right-img {
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     animation: rotate 25s linear infinite;
   }
 .banner-main-con2 {
@@ -99,11 +99,11 @@ body{
 .header-con .nav-item .is-active{
     color: var(--accent) !important;
 }
-.banner-heading h5{
+.banner-heading h2{
     color: var(--accent);
     font-weight: 600;
 }
-.banner-heading h3{
+.banner-heading h1{
     font-weight: 700;
     color: var(--secondary-color);
     margin-bottom: 6px;
@@ -117,12 +117,12 @@ body{
     margin-left: 28px;
     font-size: 20px;
     line-height: 20px;
-    color: var(--accent);
+    color: #000;
     padding-bottom: 6px;
     border-bottom: 2px solid var(--accent);
 }
 .See-btn:hover{
-    color: var(--light-purple-color);
+    color: var(#FCA61F);
 }
 .banner-con a{
     text-decoration: none;
@@ -228,7 +228,7 @@ body{
     width: 154px;
     height: 500px;
     position: absolute;
-    top: 107px;
+    top: 7px;
     left: 0;
     background: url('new images/universe-circle.png') no-repeat center center;
     background-size: cover; 
@@ -237,7 +237,7 @@ body{
 } .service-con::after{
     content: "";
     width: 52px;
-    height: 59px;
+    height: 70px;
     position: absolute;
     top: 154px;
     left: 72px;
@@ -294,7 +294,7 @@ body{
     width: 170px;
     height: 170px;
     display: flex;
-    background: #9d9ca6;
+    /* background: #9d9ca6; */
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -308,11 +308,16 @@ body{
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: ease-out;
-    box-shadow: 0 0 15px 5px yellow; /* Yellow shadow on hover */
+ 
     border-radius: 5px;
 }
 .service-box-item:hover figure img{
     transform: translateY(-8px);
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: scale(1.3);
+    box-shadow: 0 0 15px 5px yellow; /* Yellow shadow on hover */
 }
 .service-box-item-content {
     margin-left: 156px;
@@ -335,7 +340,7 @@ body{
     border-bottom: 2px solid var(--accent);
 }
 .service-box-item-content a:hover{
-    color: var(--light-purple-color);
+    color: var(#FCA61F);
 }
 .service-box-item-content a::after{
     left: 0;
@@ -345,7 +350,7 @@ body{
     content: '';
     position: absolute;
     transition: ease-in-out 0.3s;
-    background: var(--light-purple-color);
+    background: var(#FCA61F);
 }
 .service-box-item-content a:hover::after {
     width: 100%;
@@ -773,8 +778,8 @@ body{
     position: relative;
 }
 .blog-content a:hover{
-    color: var(--light-purple-color);
-    /* border-color: var(--light-purple-color); */
+    color: var(#FCA61F);
+    /* border-color: var(#FCA61F); */
 }
 .blog-content a:hover::after {
     width: 100%;
@@ -786,7 +791,7 @@ body{
     height: 2px;
     content: '';
     position: absolute;
-    background: var(--light-purple-color);
+    background: var(#FCA61F);
     transition: ease-in-out 0.3s;
 }
 /* .blog-inner-con::before{
@@ -898,7 +903,7 @@ body{
 }
 .contact-form input:focus,
 .contact-form textarea:focus{
-    outline: 1px solid #6f34fe;
+    outline: 1px solid #FCA61F;
     box-shadow: 0 0 85px 0 #dcd954;
 }
 .contact-form textarea{
@@ -1112,7 +1117,7 @@ body{
 }
 .carousel-control-prev i:hover,
 .carousel-control-next i:hover{
-    background: var(--light-purple-color);
+    background: var(#FCA61F);
 }
 .carousel-control-next {
     left: 114px;
@@ -1283,7 +1288,7 @@ body{
     height: 2px;
     content: '';
     position: absolute;
-    background: var(--light-purple-color);
+    background: var(#FCA61F);
     transition: ease-in-out 0.3s;
 }
 .See-btn:after{
@@ -1470,7 +1475,7 @@ body{
 
 /* my css */
 .banner-main-con{
-    height:560px;
+    height:620px;
     background-image: url('/assets/css/new images/1.jpg');
     background-size: cover; 
     background-position: center;
@@ -1478,3 +1483,26 @@ body{
     margin: 0; 
     padding: 0;
 }
+
+.announcement {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background:#fca61f;
+    color: #000;
+    font-family: Arial, sans;
+    margin: 0;
+    font-weight: bold;
+    padding:  0;
+    vertical-align: middle;
+    font-size: 0.8em;
+  }
+  
+  .announcement a { 
+    color: #000; 
+  }
+  
+  .announcement a:hover {
+    color: red;
+  }
